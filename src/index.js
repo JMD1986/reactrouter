@@ -15,7 +15,9 @@ ReactDOM.render(<Router>
     <ul>
       <li><Link to="/">Home</Link></li>
       <li><Link to="/contact">Contact</Link></li>
-
+      <hr />
+      <Route exact path="/" component={Home} />
+      <Route path="/contact" component={Contact} />
     </ul>
   </div>
 </Router>
